@@ -1,0 +1,314 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/*imagen de fondo*/
+/* .imgfondo {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+    filter: brightness(0.5);
+} */
+
+
+
+
+/*PÁGINA CABAÑAS*/
+.pag-cabañas{
+    padding: 5% 15%;
+}
+.oferta{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*SECCIÓN BUSCAR POR*/
+.buscarpor{ 
+    background-color: white;
+    width: max-content;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20%;
+}
+.buscarpor a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: small;
+}
+.buscarpor a:hover {
+    text-decoration: underline;
+    color: #7cabc2;
+}
+.buscarpor .active{
+    color: #7cabc2;
+}
+.ciudades{
+    border-top: 1px solid #7cabc2;
+    margin-top: 5%;
+    padding-top: 6%;
+}
+.buscarpor p {
+    margin-bottom: 2.5%;
+}
+.buscarpor h5 {
+    margin-bottom: 5%;
+}
+
+.collapsible {
+    color: black;
+    font-size: smaller;
+    cursor: pointer;
+    padding: 1%;
+    border: none;
+    text-align: left;
+    outline: none;
+    text-decoration: underline;
+}
+.content {
+    display: none;
+    overflow: hidden;
+}
+
+
+/*BOTONES*/
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 5%;
+}
+button {
+    padding: 5%;
+    width: max-content;
+    cursor: pointer;
+}
+.dropdown-content {
+    animation: fadein 0.5s;
+    display: none;
+    position: absolute; 
+    z-index: 20;
+    width: 110%;
+    overflow:hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    font-size: small;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+    color: #000000;
+    padding: 10%;
+    text-decoration: none;
+}
+.dropdown-content a:hover{
+    text-decoration: underline;
+}
+
+
+/*SECCIÓN CABAÑAS*/
+.cabañas{
+    width: 73%;
+}
+
+.cabaña{
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2% 3%;
+    box-shadow: #8c9c08 0px 1px 4px;
+    margin-bottom: 3%;
+}
+
+.cabaña h2 {
+    color: #8c9c08;
+}
+.detalles{
+    margin-top: 3%;
+}
+.detalles span{
+    font-weight: 600;
+}
+.detalles a {
+    color: #7cabc2;
+}
+.detalles a:hover{
+    text-decoration: underline;
+}
+i{
+    color: #7cabc2;
+}
+
+.cabaña img{
+    width: 300px;
+    height: 175px;
+    object-fit: cover;
+}
+.imagen {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/*ANIMACIONES*/
+@keyframes fadein {
+    0% {
+    visibility: visible;
+    opacity:0;
+    }
+    100% {
+    visibility: visible;
+    opacity:1;
+    }
+}
+.cabaña {
+    animation: fadein 1s; 
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.cabaña1 {
+    animation-delay: 0.5s;
+}
+.cabaña2 {
+    animation-delay: 1s;    
+}
+.cabaña3 {
+    animation-delay: 1.5s;    
+}
+.cabaña4 {
+    animation-delay: 2s;    
+}
+.cabaña5 {
+    animation-delay: 2.5s;    
+}
+
+.botones {
+    animation: fadein 1s;
+}
+.buscarpor {
+    animation: fadein 0.5s;
+}
+
+@keyframes zoom {    
+    100% {
+        transform: scale(1.05); 
+        filter: brightness(0.5);
+    }
+}
+.cabaña img:hover {
+    animation: zoom 0.5s;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+}
+.imagen {
+    overflow: hidden;
+}
+
+
+#menu, #menu-check {
+    display: none;
+}
+
+
+
+/*breakpoints*/
+
+@media only screen and (max-width: 992px) {
+    .cabañas {
+        width: 100%;
+    }
+    .pag-cabañas {
+        padding: 5% 7%;
+        margin: 0%;
+    }
+    #menu-check:not(:checked) ~ .buscarpor {
+        display: none;
+    }
+    #menu-check:checked ~ .buscarpor {
+        display: block;
+    }
+    #menu {
+        display: block;
+        color: #8c9c08;
+        font-size: 1.2em;
+        font-weight: bold;
+        box-shadow:  rgba(0, 0, 0, 0.1) 0px 1px 4px;
+        padding: 1% 2%;
+        top: 0.5em;
+        left: 0.5em;
+    }
+    #menu:hover {
+        cursor: pointer;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
+    .buscarpor {
+        position: absolute;
+        float: left;
+        z-index: 10;
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cabaña {
+        display: flex;
+        flex-direction: column-reverse;
+        width: fit-content;
+        margin-bottom: 10%;
+    }
+    .cabañas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalles {
+        margin-bottom: 5%;
+    }
+    .buscarpor {
+        padding: 5%;
+    }
+    .botones {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 7.5%;
+    }
+
+}
+
+/* colores:
+#6c790b;
+#7cabc2;
+#8c9c08;
+sombra gris rgba(0, 0, 0, 0.16) 0px 1px 4px;
+*/

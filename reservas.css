@@ -1,0 +1,90 @@
+
+
+body {
+    background-image: url(./imagenes/fondo01.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+}
+/*
+ header{
+    display:flex;
+    background-color: rgb(36, 89, 23);
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover{
+    color: rgb(69, 237, 102);
+}
+*/
+form { 
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;   
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #8c9c08;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+/*footer{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    }
+    */
+
