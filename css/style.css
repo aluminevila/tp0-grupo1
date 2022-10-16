@@ -1,9 +1,8 @@
 *{
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
-header,body,main,footer{
+body,main{
     overflow: auto;
 }
 
@@ -15,44 +14,6 @@ body{
 .container {
     max-width: 1400px;
     margin: auto;
-}
-
-header,footer{
-    background-color: #011516;
-}
-
-.logo {
-    margin: 0;
-    padding: 30px 20px;
-    justify-content: center;
-    text-align: center;
-    color: #85D4B3;
-}
-
-header.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header>div>nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-bottom: 25px;
-    justify-content: center;
-    text-align: center;
-}
-
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-
-header a:hover{
-    color: #85D4B3;
 }
 
 main {
@@ -68,8 +29,19 @@ main h3{
     padding-top: 15px;
     color: black;
 }
+/*Animaciones*/
+@keyframes fadein {
+    0% {
+    visibility: visible;
+    opacity:0;
+    }
+    100% {
+    visibility: visible;
+    opacity:1;
+    }
+}
 
-footer,.regiones {
+.regiones {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +55,10 @@ section {
     padding: 40px;
     margin: 20px;
     border-radius: 10px;
+    animation-fill-mode: forwards;
+    animation: fadein 1s; 
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 
 section.noa {
@@ -90,7 +66,8 @@ section.noa {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/Salta-noa.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/Salta-noa.jpg);
+    animation-delay: 1.5s; 
 }
 
 section.nea {
@@ -98,7 +75,8 @@ section.nea {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/misiones-nea.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/misiones-nea.jpg);
+    animation-delay: 1s; 
 }
 
 section.cuyo {
@@ -106,7 +84,8 @@ section.cuyo {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/mendoza-cuyo.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/mendoza-cuyo.jpg);
+    animation-delay: 0.5s; 
 }
 
 section.centro {
@@ -114,7 +93,8 @@ section.centro {
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-        ),url(/tp0-grupo1/imagenes/inicio/EntreRios-Centro.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/EntreRios-Centro.jpg);
+    animation-delay: 1s; 
 }
 
 section.patagonia {
@@ -122,7 +102,8 @@ section.patagonia {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/RioNegro-patagonia.webp); 
+        ),url(/tp0-grupo1/imagenes/inicio/RioNegro-patagonia.webp);
+    animation-delay: 1.5s; 
 }
 
 section>div>article>h4 {
@@ -144,28 +125,8 @@ main.map h3 {
     padding-top: 10px;
 }
 
-footer p{
-    color:#85D4B3;
-}
-
 @media (min-width: 720px) {
-    header {
-        position: fixed;
-        width: 100%;
-    }
-    header.container {
-        flex-direction: row;
-        justify-content: space-between;  
-    }
-    header>div>nav {
-        padding: 0 5px 5px 0;
-        padding-right: 20px;
-    }
-    .logo{
-        justify-content: left;
-        text-align: left;
-        padding-bottom: 0;
-    }
+
     main nav {
         padding-top: 140px;
     }
