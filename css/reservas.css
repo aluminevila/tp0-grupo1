@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url(./imagenes/fondo01.jpg);
+    background-image: url(/tp0-grupo1/imagenes/fondo01.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;

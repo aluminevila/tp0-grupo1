@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header,body,main,footer{
@@ -89,7 +90,7 @@ section.noa {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(./img/Salta-noa.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/Salta-noa.jpg); 
 }
 
 section.nea {
@@ -97,7 +98,7 @@ section.nea {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(./img/misiones-nea.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/misiones-nea.jpg); 
 }
 
 section.cuyo {
@@ -105,7 +106,7 @@ section.cuyo {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(./img/mendoza-cuyo.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/mendoza-cuyo.jpg); 
 }
 
 section.centro {
@@ -113,7 +114,7 @@ section.centro {
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-        ),url(./img/EntreRios-Centro.jpg); 
+        ),url(/tp0-grupo1/imagenes/inicio/EntreRios-Centro.jpg); 
 }
 
 section.patagonia {
@@ -121,7 +122,7 @@ section.patagonia {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(./img/RioNegro-patagonia.webp); 
+        ),url(/tp0-grupo1/imagenes/inicio/RioNegro-patagonia.webp); 
 }
 
 section>div>article>h4 {
