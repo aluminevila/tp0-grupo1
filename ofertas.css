@@ -93,9 +93,11 @@ footer p{
 .oferta {
     width: 40%;
     margin: 3%;
-    color: whitesmoke;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px;
+    animation: fadein 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
 .oferta h4 {
     color: black;
@@ -104,9 +106,20 @@ footer p{
     background-color: rgba(0, 0, 0, 0.4);
     background-size: cover;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 2%;    
+    color: whitesmoke;
 }
 
+@keyframes fadein {
+    0% {
+    visibility: visible;
+    opacity:0;
+    }
+    100% {
+    visibility: visible;
+    opacity:1;
+    }
+}
 
 /*imágenes*/
 .bariloche {
@@ -121,18 +134,37 @@ footer p{
 .angostura {
     background-size: cover;
     background-image: url(./img/ofertas/angostura.png);
+    animation-delay: 1s;
 }
 .sanluis {
     background-size: cover;
     background-position: 50%;
     background-image: url(./img/ofertas/sanluis.jpg);
+    animation-delay: 1s;
 }
 .madryn {
     background-size: cover;
     background-position: 90%;
     background-image: url(./img/ofertas/madryn.jpg);
+    animation-delay: 2s;
 }
 .ushuaia {
     background-size: cover;
     background-image: url(./img/ofertas/ushuaia.jpg);
+    animation-delay: 2s;
 }
+
+/*breakpoints*/
+@media only screen and (max-width: 992px) {
+    .oferta {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .oferta {
+        width: 85%;
+    }
+
+}
+
