@@ -125,32 +125,32 @@ footer p{
 .bariloche {
     background-size: cover;
     background-position: 50%;
-    background-image: url(./img/ofertas/bariloche.jpg);
+    background-image: url(../imagenes/ofertas/bariloche.jpg);
 }
 .iguazu {
     background-size: cover;
-    background-image: url(./img/ofertas/iguazu.jpg);
+    background-image: url(../imagenes/ofertas/iguazu.jpg);
 }
 .angostura {
     background-size: cover;
-    background-image: url(./img/ofertas/angostura.png);
+    background-image: url(../imagenes/ofertas/angostura.png);
     animation-delay: 1s;
 }
 .sanluis {
     background-size: cover;
     background-position: 50%;
-    background-image: url(./img/ofertas/sanluis.jpg);
+    background-image: url(../imagenes/ofertas/sanluis.jpg);
     animation-delay: 1s;
 }
 .madryn {
     background-size: cover;
     background-position: 90%;
-    background-image: url(./img/ofertas/madryn.jpg);
+    background-image: url(../imagenes/ofertas/madryn.jpg);
     animation-delay: 2s;
 }
 .ushuaia {
     background-size: cover;
-    background-image: url(./img/ofertas/ushuaia.jpg);
+    background-image: url(../imagenes/ofertas/ushuaia.jpg);
     animation-delay: 2s;
 }
 
