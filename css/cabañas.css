@@ -4,7 +4,9 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+body{
+    background-color: #7EA2A2;
+}
 a {
     color: black;
     text-decoration: none;
@@ -115,17 +117,17 @@ button {
 }
 
 .cabaña{
-    background-color: white;
+    background-color: #7EA2A2;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 2% 3%;
-    box-shadow: #8c9c08 0px 1px 4px;
+    box-shadow: #334750 0px 1px 4px;
     margin-bottom: 3%;
 }
 
 .cabaña h2 {
-    color: #8c9c08;
+    color: #334750;
 }
 .detalles{
     margin-top: 3%;
@@ -134,13 +136,13 @@ button {
     font-weight: 600;
 }
 .detalles a {
-    color: #7cabc2;
+    color: #ffffff;
 }
 .detalles a:hover{
     text-decoration: underline;
 }
 i{
-    color: #7cabc2;
+    color: #334750;
 }
 
 .cabaña img{
@@ -238,7 +240,7 @@ i{
     }
     #menu {
         display: block;
-        color: #8c9c08;
+        color: #86AB41;
         font-size: 1.2em;
         font-weight: bold;
         box-shadow:  rgba(0, 0, 0, 0.1) 0px 1px 4px;
