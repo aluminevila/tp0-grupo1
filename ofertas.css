@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+header,body,main,footer{
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(226,230,229,255);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header,footer{
+    background-color: #011516;
+}
+
+.logo {
+    margin: 0;
+    padding: 30px 20px;
+    justify-content: center;
+    text-align: center;
+    color: #85D4B3;
+}
+
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>div>nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: #85D4B3;
+}
+
+main {
+    justify-content: center;
+    text-align: center;
+    margin: 3% auto;
+}
+
+main nav {
+    padding-top: 50px;
+}
+
+main h3{
+    padding-top: 15px;
+    color: black;
+}
+
+footer,.regiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+footer p{
+    color:#85D4B3;
+}
+
+
+
+/*--- main ---*/
+
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.oferta {
+    width: 40%;
+    margin: 3%;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px;
+}
+.oferta h4 {
+    color: black;
+}
+.oferta p {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+/*imágenes*/
+.bariloche {
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(./img/ofertas/bariloche.jpg);
+}
+.iguazu {
+    background-size: cover;
+    background-image: url(./img/ofertas/iguazu.jpg);
+}
+.angostura {
+    background-size: cover;
+    background-image: url(./img/ofertas/angostura.png);
+}
+.sanluis {
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(./img/ofertas/sanluis.jpg);
+}
+.madryn {
+    background-size: cover;
+    background-position: 90%;
+    background-image: url(./img/ofertas/madryn.jpg);
+}
+.ushuaia {
+    background-size: cover;
+    background-image: url(./img/ofertas/ushuaia.jpg);
+}
