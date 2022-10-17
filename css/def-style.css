@@ -4,7 +4,8 @@
 
 header,footer{
     overflow: auto;
-    background-color: #011516;
+    background-color: #334750 ;
+    min-height: 100px;
 }
 
 header.container{
@@ -23,34 +24,34 @@ header>div>nav {
 }
 
 header a {
-    padding: 5px 12px;
+    padding: 20px 12px;
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
 
 header a:hover{
-    color: #85D4B3;
+    color: #86AB41;
 }
 
 footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center; 
 }
 
 footer p{
-    color:#85D4B3;
+    color:#86AB41;
 }
 
 .logo {
     margin: 0;
-    padding: 30px 20px;
+    padding: 10px 10px 50px 50px ;
     justify-content: center;
     text-align: center;
-    color: #85D4B3;
+    height: 20px ;
 }
 
 @media (min-width: 720px) {
