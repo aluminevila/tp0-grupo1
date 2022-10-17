@@ -4,24 +4,11 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 a {
     color: black;
     text-decoration: none;
 }
-/*imagen de fondo*/
-/* .imgfondo {
-    position: fixed;
-    min-height: 100%;
-    min-width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    filter: brightness(0.5);
-} */
-
-
-
 
 /*PÁGINA CABAÑAS*/
 .pag-cabañas{
