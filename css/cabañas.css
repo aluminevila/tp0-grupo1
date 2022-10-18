@@ -1,14 +1,11 @@
 /*GENERAL*/
 *{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 body{
     background-color: #7EA2A2;
 }
-main.pag-cabañas{
-    padding: 124px 100px 50px 100px;
-}
+
 .busqueda {
     padding-top: 53px;
 }
@@ -19,7 +16,7 @@ a {
 
 /*PÁGINA CABAÑAS*/
 .pag-cabañas{
-    padding: 5% 15%;
+    padding: 124px 75px 50px 75px;
 }
 .oferta{
     display: flex;
@@ -42,10 +39,10 @@ a {
 }
 .buscarpor a:hover {
     text-decoration: underline;
-    color: #7cabc2;
+    color: #86AB41;
 }
 .buscarpor .active{
-    color: #7cabc2;
+    color: #86AB41;
 }
 .ciudades{
     border-top: 1px solid #7cabc2;
@@ -113,6 +110,7 @@ button {
 }
 .dropdown-content a:hover{
     text-decoration: underline;
+    color: #86AB41;
 }
 
 
@@ -145,6 +143,7 @@ button {
 }
 .detalles a:hover{
     text-decoration: underline;
+    color: #86AB41;
 }
 i{
     color: #334750;
