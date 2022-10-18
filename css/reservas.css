@@ -10,19 +10,21 @@ body {
     margin: 0;
     font-family: monospace;
 }
-
+main{
+    padding: 140px 0px 50px 0px;
+}
 form { 
     width: 450px;
     margin: auto;
     background: rgba(0,0,0,0.4);
-    padding: 10px 20px;
+    padding: 10px 20px ;
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
 }
 
 h2 {
-    color: #fff;
+    color: #e7e7e7;
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -45,13 +47,13 @@ textarea {
 }
 
 #boton{
-    background: #8c9c08;
-    color: #fff;
+    background: #86AB41;
+    color: #e7e7e7;
     padding: 20px;
 }
 
 #boton:hover {
-cursor: pointer;
+    cursor: pointer;
 }
 
 @media (max-width:480px){
