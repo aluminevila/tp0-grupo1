@@ -14,14 +14,16 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="logo"> <img src="/tp0-grupo1/imagenes/Copia de C(13).jpg"width="75" height="75"></div>
-            <nav class="header-menu">
-                <a href="./index.html">Inicio</a>
-                <a href="./cabañas.html">Cabañas</a>
-                <a href="./ofertas.html">Ofertas</a>
-                <a href="./reservas.html">Contacto</a>
-            </nav>
+        <div class="header">
+            <nav id="navbar">
+                <img src="../imagenes/Copia de C(1).png" class="logo">
+                <ul id="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./cabañas.html">Cabañas</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./reservas.html">Contacto</a></li>
+                </ul>  
+            </nav> 
         </div>    
     </header>
 
@@ -51,7 +53,13 @@
         
         <p> Derechos reservados @2020</p>
     </footer>
+    
     <script src="/tp0-grupo1/js/reservas.js"></script>
+    
+    <script src="/tp0-grupo1/js/app.js"> 
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+    </script>
     
 </body>
 </html>
