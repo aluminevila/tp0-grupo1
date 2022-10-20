@@ -1,3 +1,4 @@
+/* --- validación del formulario ---*/
 function validarFormulario(evento) {
     evento.preventDefault();
     var nombre = document.getElementById('nombre').value;
@@ -27,3 +28,26 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("formulario").addEventListener('submit', validarFormulario); 
 });
 
+/*--- api formspree ---*/
+
+const $form = document.querySelector('#form')
+
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+    event.preventDefault()
+    var status = document.getElementById("my-form-status");
+    const form = new FormData(this);
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (response.ok) {
+        status.innerHTML = "Gracias por contactarnos!";
+        this.reset()
+        
+    }
+}

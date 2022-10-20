@@ -67,3 +67,6 @@ textarea {
     }
 }
 
+#my-form-status {
+    color: palevioletred;
+}
