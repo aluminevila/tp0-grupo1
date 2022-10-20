@@ -112,7 +112,7 @@ footer p{
     animation-delay: 2s;
 }
 
-/*breakpoints*/
+
 @media only screen and (max-width: 992px) {
     .oferta {
         width: 70%;

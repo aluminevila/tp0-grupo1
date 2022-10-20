@@ -6,6 +6,7 @@ body{
     background-color: #7EA2A2;
 }
 
+
 .busqueda {
     padding-top: 53px;
 }
@@ -220,7 +221,7 @@ i{
 }
 
 
-#menu, #menu-check {
+#menub, #menu-check {
     display: none;
 }
 
@@ -242,7 +243,7 @@ i{
     #menu-check:checked ~ .buscarpor {
         display: block;
     }
-    #menu {
+    #menub {
         display: block;
         color: #86AB41;
         font-size: 1.2em;
@@ -252,7 +253,7 @@ i{
         top: 0.5em;
         left: 0.5em;
     }
-    #menu:hover {
+    #menub:hover {
         cursor: pointer;
     }
     #menu-cerrar {
@@ -299,9 +300,3 @@ i{
 
 }
 
-/* colores:
-#6c790b;
-#7cabc2;
-#8c9c08;
-sombra gris rgba(0, 0, 0, 0.16) 0px 1px 4px;
-*/

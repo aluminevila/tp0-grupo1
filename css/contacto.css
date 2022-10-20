@@ -56,9 +56,14 @@ textarea {
     cursor: pointer;
 }
 
-@media (max-width:480px){
+@media only screen and (max-width: 992px) {
+    form {
+        width: 60%;
+    }
+}
+@media (max-width:600px){
     form{
-        width: 100%;
+        width: 95%;
     }
 }
 

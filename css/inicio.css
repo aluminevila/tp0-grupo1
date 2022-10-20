@@ -20,28 +20,33 @@ body{
 main {
     justify-content: center;
     text-align: center;
-    padding: 40px 20px 0px 20px;  
+    padding: 175px 75px 50px 75px;
 }
 main nav {
-    padding-top: 50px;
     background-color: #e7e7e7;
     padding: 25px 50px 35px 50px;
-    border-radius: 10px;
     box-shadow: #334750 0px 1px 4px;
+    padding: 50px 10px 50px 10px;
+    border-radius: 0%;
 }
 main h3{
-    padding: 40px 20px 40px 20px;
     color: black;
+    padding: 50px 10px 50px 10px;
 }
 main nav,.regiones{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center; 
     
 }
-
+.regiones {
+    flex-direction: row;
+}
+.regiones p{
+    font-size: 14px;
+    width: 8.3rem;
+}
 
 /*Animaciones*/
 @keyframes fadein {
@@ -57,15 +62,19 @@ main nav,.regiones{
 
 
 section {
-    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover; 
-    margin-bottom: 20px;
-    border-radius: 10px;
+    background-size: cover;
     animation-fill-mode: forwards;
     animation: fadein 1s; 
     visibility: hidden;
     animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 21.5%;
+    margin: 4px;
+    border-radius: 0%;
+    align-items: center;
 }
 
 section.noa {
@@ -135,6 +144,8 @@ section.patagonia {
 
 .map {
     padding-bottom: 15px;
+    flex-direction: row;
+    float: left;
 }
 main.map h3 {
     padding-top: 10px;
@@ -142,69 +153,95 @@ main.map h3 {
 .map iframe{
     background-repeat: no-repeat;
     background-size: cover; 
-    border-radius: 10px;
+    padding: 0px 75px 50px 0px;
+    border-radius: 0px; 
 }
 
 
 .reserva{
     background-color: #e7e7e7;
     padding: 40px 20px 40px 20px;
+    width: 61.9%;
+    height: 224px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 .publicidad{
     background-color: #e7e7e7;
     padding: 40px 20px 40px 20px;
+    width: 61.9%;
+    height: 224px;
+    align-items: center;
+}
+.noa, .nea, .cuyo, .centro, .patagonia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-
-@media (min-width: 720px) {
-    main{
-        padding: 175px 75px 50px 75px;
+@media only screen and (max-width: 992px) {
+    main {
+        padding-top: 50px;
     }
     main nav {
-        padding: 50px 10px 50px 10px;
-        border-radius: 0%;
-        flex-direction: row;
+        flex-direction: column;
+        border-radius: 10px;
     }
-    main h3{
-        padding: 50px 10px 50px 10px;
-        color: black;
+    .reserva, .publicidad {
+        width: 80%;
     }
-    .regiones {
-        flex-direction: row;
-    }
-    .regiones p{
-        font-size: 14px;
-        width: 8.3rem;
-    }
-    section {
+    aside {
         display: flex;
-        flex-direction: row;
-        height: 300px;
-        width: 21.5%;
-        margin: 4px;
-        border-radius: 0%;
+        flex-direction: column;
         align-items: center;
     }
     .map {
-        flex-direction: row;
-        float: left;
+        float: none;
+    }
+    .provincias p {
+        font-size: smaller;
+        width: fit-content;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 40px 20px 0px 20px; 
+        margin: 0%;
+    }
+    main nav {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    main h3 {
+        padding: 40px 20px 40px 20px;
+    }
+    section {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .regiones {
+        flex-direction: column;
+    }
+    .provincias p {
+        font-size: larger;
+        width: max-content;
     }
     .map iframe {
-        padding: 0px 75px 50px 0px;
-        border-radius: 0px; 
+        border-radius: 10px;
+        padding: 0%;
     }
-    .reserva{
-        width: 61.9%;
-        height: 224px;
-        margin-top: 75px;
-        margin-bottom: 20px;
-        align-items: center;
+    .reserva, .publicidad {
+        width: 100%;
     }
-    .publicidad{
-        width: 61.9%;
-        height: 224px;
-        align-items: center;
+    .map {
+        width: 100%;
     }
+
 }
+
