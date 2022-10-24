@@ -69,7 +69,7 @@ nav.sticky ul{
     padding-top: 60px;
 } 
 
-footer {
+/* footer {
     background-color: #334750;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@ footer {
 
 footer p{
     color:#86AB41;
-}
+} */
 
 
 
@@ -104,3 +104,23 @@ footer p{
         padding: 10px;
     }*/
 }
+
+footer a {
+    padding: 5px;
+    color: white;
+    }
+    
+footer {
+    color: azure;
+    background-color: #334750;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+footer p{
+    padding: 20px;
+}
+

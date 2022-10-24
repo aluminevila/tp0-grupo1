@@ -10,7 +10,7 @@ body{
 .busqueda {
     padding-top: 53px;
 }
-a {
+.busqueda a {
     color: black;
     text-decoration: none;
 }
@@ -299,4 +299,7 @@ i{
     }
 
 }
-
+/*?*/
+footer i {
+    color: azure;
+}
