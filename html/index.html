@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/inicio.css">
     <link rel="stylesheet" href="../css/def-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/buscador.css">
     <title>Inicio</title>
     <link rel="icon" href="../imagenes/ico.ico">
 </head>
@@ -32,24 +33,58 @@
 
         <div class="container">
 
-            <nav class="main-menu">
+            <form action="" method="get">
 
-                <label for="destino">Destino:</label>
-                <input type="list" id="destino" name="destino">
+                <div class="titulo">
+                    <h3>Buscá tu próxima estadía</h3>
+                </div>
+                
+                <div class="container-b">
+        
+                    <div class="dropdown">
+                        <button class="">Destino</button>
+                        <div class="dropdown-options">
+                            <input type="search" name="destino" id="destino" required placeholder="Elija un destino">   
+                        </div>
+                    </div>
+        
+                    <div class="dropdown">
+                        <button class="checkin">Llegada</button>
+                        <div class="dropdown-options">
+                            <input type="date"> 
+                        </div>
+                    </div>
+        
+                    <div class="dropdown">
+                        <button class="checkout">Salida</button>
+                        <div class="dropdown-options">
+                            <input type="date"> 
+                        </div>                
+                    </div>
+        
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Huéspedes</button>
+                        <div class="dropdown-options">
+                            <form action="">
+                                <input type="number" name="adultos" id="adultos" placeholder="Adultos" min="1">
+                                <input type="number" name="niños" id="niños" placeholder="Niños" min="0">
+                                <input type="number" name="mascotas" id="mascotas" placeholder="Mascotas" min="0">
+                                <input type="submit" name="aceptar" id="aceptar" value="Aceptar">
+                            </form>
+                        </div>
+                    </div>
 
-                <label for="fechaida">Fecha de ida:</label>
-                <input type="date" id="fechaida" name="fechaida"> 
-
-                <label for="fechavuelta">Fecha de vuelta:</label>
-                <input type="date" id="fechavuelta" name="fechavuelta">
-
-                <label for="pasajeros">Pasajeros:</label>
-                <input type="list" id="pasajeros" name="pasajeros">
-            
-            </nav>
+                    <div class="dropdown">
+                        <button type="submit" class="dropdown-btn submit">Buscar</button> 
+                    </div>
+                    
+        
+                </div>
+        
+            </form>
 
         </div>
-        
+
 
         <div class="container">
 
@@ -149,15 +184,24 @@
 
             <section class="reserva">
                 <article>
-                    <h4>Programá tu estadia con nuestra web</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum in saepe esse! Porro totam illum maiores possimus provident dolores est debitis, et ex voluptatibus sint eaque omnis. Quod, perspiciatis?</p>
+                    <h4>Programá tu estadia</h4>
+                    <br>
+                    <p> Sabemos que esperás que tu viaje sea tal cual lo soñaste y que tu aventura requiere de un refugio que esté a la altura de tus sueños.
+                        Es por ello que contamos con una amplia propuesta de cabañas, seleccionadas y verificadas, para que planifiques tu estadía y sólo debas 
+                        preocuparte por disfrutar. <br> 
+                        Te invitamos a recorrer las opciones, explorar el mapa o contactarnos para una atención personalizada.</p>
                 </article>
             </section>
 
             <section class="publicidad">
                 <article>
                     <h4>Publicá en nuestra web</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore labore facere dolore error voluptatibus quasi saepe vero itaque aliquid velit. Officiis vitae natus quidem illum nesciunt aspernatur animi expedita rem!</p>
+                    <br>
+                    <p> Si tenés un emprendimiento o propiedades y buscás darle visibilidad, tener la tranquilidad de que estará
+                        en buenas manos y tendrás todos los datos necesarios para actuar ante cualquier inconveniente, no dudes 
+                        en comunicarte con nosotros. <br>  
+                        Nos encargaremos de la publicidad y seremos el nexo entre tú y tus próximos huéspedes. 
+                    </p>
                 </article>
             </section>
             
