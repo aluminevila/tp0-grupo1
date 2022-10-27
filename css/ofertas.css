@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
 }
 
-header,body,main,footer{
+body,main{
     overflow: auto;
 }
 
@@ -22,9 +23,13 @@ main nav {
     padding-top: 50px;
 }
 
-main h3{
-    padding-top: 15px;
-    color: black;
+main h2{
+    background-color: #334750;
+    color: white;
+    padding: 15px;
+    margin: 2% 6.5%;
+    font-weight: 400;
+    font-size: larger;
 }
 
 .regiones {
@@ -46,7 +51,7 @@ main h3{
     justify-content: center;
 }
 .oferta {
-    width: 40%;
+    width: 40.4%;
     margin: 3%;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px;
@@ -55,14 +60,17 @@ main h3{
     animation-fill-mode: forwards;
 }
 .oferta h4 {
-    color: black;
+    color: #233138;
+    font-size: 18px;
+    padding: 5px;
 }
 .oferta p {
     background-color: rgba(0, 0, 0, 0.4);
     background-size: cover;
-    padding-top: 2%;
-    padding-bottom: 2%;    
-    color: whitesmoke;
+    padding-top: 2% 0%;    
+    color: white;
+    font-size: 14px;
+    padding: 10px;
 }
 
 @keyframes fadein {
@@ -78,37 +86,34 @@ main h3{
 
 /*imágenes*/
 .bariloche {
-    background-size: cover;
     background-position: 50%;
     background-image: url(../imagenes/ofertas/bariloche.jpg);
 }
 .iguazu {
-    background-size: cover;
     background-image: url(../imagenes/ofertas/iguazu.jpg);
 }
 .angostura {
-    background-size: cover;
     background-image: url(../imagenes/ofertas/angostura.png);
     animation-delay: 1s;
 }
 .sanluis {
-    background-size: cover;
     background-position: 50%;
     background-image: url(../imagenes/ofertas/sanluis.jpg);
     animation-delay: 1s;
 }
 .madryn {
-    background-size: cover;
     background-position: 90%;
     background-image: url(../imagenes/ofertas/madryn.jpg);
     animation-delay: 2s;
 }
 .ushuaia {
-    background-size: cover;
     background-image: url(../imagenes/ofertas/ushuaia.jpg);
     animation-delay: 2s;
 }
 
+.bariloche, .iguazu, .angostura, .sanluis, .madryn, .ushuaia {
+    background-size: cover;
+}
 
 @media only screen and (max-width: 992px) {
     .oferta {
@@ -120,6 +125,8 @@ main h3{
     .oferta {
         width: 85%;
     }
-
+    main h2{
+        font-size: medium;
+    }
 }
 

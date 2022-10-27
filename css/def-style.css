@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anek Malayalam', sans-serif;
 }
 
 /*Estilo del header*/
@@ -41,7 +41,7 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #334750;
     
 }
 nav ul li a:hover {

@@ -1,6 +1,7 @@
 /*GENERAL*/
 *{
     margin: 0;
+    font-family: 'Anek Malayalam', sans-serif;
 }
 body{
     background-color: #7EA2A2;
@@ -11,7 +12,7 @@ body{
     padding-top: 53px;
 }
 .busqueda a {
-    color: black;
+    color: #334750;
     text-decoration: none;
 }
 
@@ -35,7 +36,7 @@ body{
 }
 .buscarpor a{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.75);
+    color: #334750;
     font-size: small;
 }
 .buscarpor a:hover {
@@ -58,7 +59,7 @@ body{
 }
 
 .collapsible {
-    color: black;
+    color: #334750;
     font-size: smaller;
     cursor: pointer;
     padding: 1%;
@@ -105,7 +106,7 @@ button {
 }
 .dropdown-content a{
     display: block;
-    color: #000000;
+    color: #334750;
     padding: 10%;
     text-decoration: none;
 }
