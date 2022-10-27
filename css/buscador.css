@@ -1,3 +1,17 @@
+* {
+    font-family: 'Anek Malayalam', sans-serif;
+}
+.titulo{
+    height: 50px;
+    text-align: center;
+}
+.titulo h3{
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+    color: white;
+    background-color: #334750;
+}
 .container-b {
     display: flex;
     flex-direction: row;
@@ -19,13 +33,12 @@
     border-radius: 5px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-options{
     display: flex;
     flex-direction: column;
 }
-
 button {
+    color: #334750;
     border: none;
     border-radius: 5px;
     padding: 15px 30px;
@@ -38,13 +51,12 @@ button:hover {
     color: #86AB41;
 }
 .submit:hover {
-    color: #e7e7e7;
+    color: white;
 }
-
+.submit:hover{
+    color: white;
+    background: #334750;
+}
 input {
     margin-top: 10px;
-}
-
-.submit{
-    background-color: #86AB41;
 }

@@ -1,16 +1,14 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Anek Malayalam', sans-serif;
 }
-
 body,main{
     overflow: auto;
 }
 body{
     background-color: #7EA2A2;
 }
-
-
 .container {
     max-width: 1400px;
     margin: auto;
@@ -36,16 +34,23 @@ main .container-b,.regiones{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; 
-    
+    text-align: center;   
+}
+
+.titulo-r h3 {
+    color: #334750;
+    font-size: x-large;
+    font-weight: 400;
 }
 .regiones {
     flex-direction: row;
 }
 .regiones p{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 300;
     width: 8.3rem;
 }
+
 
 /*Animaciones*/
 @keyframes fadein {
@@ -69,20 +74,19 @@ section {
     animation-fill-mode: forwards;
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 350px;
     width: 21.5%;
     margin: 4px;
     border-radius: 0%;
     align-items: center;
 }
-
 section.noa {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
         ),url(/tp0-grupo1/imagenes/inicio/Salta-noa.jpg);
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 section.nea {
     background-image: linear-gradient(
@@ -90,7 +94,7 @@ section.nea {
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
         ),url(/tp0-grupo1/imagenes/inicio/misiones-nea.jpg);
-    animation-delay: 1s; 
+    animation-delay: 2s; 
     align-items: center;
 }
 section.cuyo {
@@ -99,7 +103,7 @@ section.cuyo {
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
         ),url(/tp0-grupo1/imagenes/inicio/mendoza-cuyo.jpg);
-    animation-delay: 0.5s; 
+    animation-delay: 1.5s; 
 }
 section.centro {
     background-image: linear-gradient(
@@ -107,7 +111,7 @@ section.centro {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
         ),url(/tp0-grupo1/imagenes/inicio/EntreRios-Centro.jpg);
-    animation-delay: 1s; 
+    animation-delay: 2s; 
 }
 section.patagonia {
     background-image: linear-gradient(
@@ -115,7 +119,7 @@ section.patagonia {
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
         ),url(/tp0-grupo1/imagenes/inicio/RioNegro-patagonia.webp);
-    animation-delay: 1.5s; 
+    animation-delay: 2.5s; 
 }
 
 
@@ -124,17 +128,15 @@ section.patagonia {
     flex-direction: column;
     align-items: center;
     text-align: center; 
-}
-.provincias {
-    height: 200px;
+    height: 250px;
 }
 .provincias h4 {
-    padding-bottom: 10px;
-    color: #e7e7e7;
+    padding-bottom: 20px;
+    color: white;
 }
 .provincias a{
     text-decoration: none;
-    color: #e7e7e7;
+    color: white;
 }
 .provincias a:hover {
     color: #86AB41;
@@ -145,10 +147,10 @@ section.patagonia {
     flex-direction: row;
     float: left;
     margin: 75px 75px 20px 0px ;
-
 }
-.map h3 {
+.map h4 {
     padding: 10px;
+    margin-bottom: 5px;
     align-items: center;
 }
 .map iframe{
@@ -158,27 +160,45 @@ section.patagonia {
 }
 
 
-.reserva{
+.reserva {
     background-color: #e7e7e7;
-    padding: 40px 20px 40px 20px;
+    padding: 50px;
     width: 61.5%;
-    height: 245px;
+    height: 244px;
     margin-top: 75px;
     margin-bottom: 25px;
     align-items: center;
 }
 .publicidad{
     background-color: #e7e7e7;
-    padding: 40px 20px 40px 20px;
+    padding: 50px;
     width: 61.5%;
-    height: 245px;
+    height: 244px;
     align-items: center;
 }
+.reserva p,.publicidad p {
+    color: #334750;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0%;
+}
+.reserva h4, .publicidad h4, .map h4{
+    color: white;
+    background-color: #86AB41;
+}
+.reserva h4, .publicidad h4, .provincias h4, .map h4 {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 
 .noa, .nea, .cuyo, .centro, .patagonia {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 .noa:hover {
     box-shadow: 2px 8px 10px;
@@ -223,6 +243,7 @@ section.patagonia {
     }
     .reserva, .publicidad {
         width: 80%;
+        height: auto;
     }
     aside {
         display: flex;
@@ -231,6 +252,10 @@ section.patagonia {
     }
     .map {
         float: none;
+        margin: 10% 0% 0%;
+    }
+    .map iframe {
+        padding: 0% 20%;
     }
     .provincias p {
         font-size: smaller;
@@ -250,7 +275,12 @@ section.patagonia {
         border-radius: 10px;
     }
     main h3 {
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px;
+    }
+    .titulo-r h3 {
+        color: #334750;
+        font-size: large;
+        font-weight: 400;
     }
     section {
         width: 100%;
@@ -260,9 +290,17 @@ section.patagonia {
     .regiones {
         flex-direction: column;
     }
+    .cuyo,.centro,.nea,.noa {
+        padding-top: 25%;
+    }
     .provincias p {
-        font-size: larger;
+        text-align: justify;
+        text-align: center;
+        font-size: medium;
         width: max-content;
+    }
+    .map {
+        width: 100%;
     }
     .map iframe {
         border-radius: 10px;
@@ -272,8 +310,20 @@ section.patagonia {
         width: 100%;
         height: auto;
     }
-    .map {
-        width: 100%;
+    section.noa {
+        animation-delay: 2s;
+    }
+    section.nea {
+        animation-delay: 2.5s; 
+    }
+    section.cuyo {
+        animation-delay: 3s; 
+    }
+    section.centro {
+        animation-delay: 3.5s; 
+    }
+    section.patagonia {
+        animation-delay: 4s; 
     }
 
 }
