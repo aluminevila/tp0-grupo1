@@ -85,7 +85,7 @@ section.noa {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/Salta-noa.jpg);
+        ),url(../imagenes/inicio/Salta-noa.jpg);
     animation-delay: 2.5s;
 }
 section.nea {
@@ -93,7 +93,7 @@ section.nea {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/misiones-nea.jpg);
+        ),url(../imagenes/inicio/misiones-nea.jpg);
     animation-delay: 2s; 
     align-items: center;
 }
@@ -102,7 +102,7 @@ section.cuyo {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/mendoza-cuyo.jpg);
+        ),url(../imagenes/inicio/mendoza-cuyo.jpg);
     animation-delay: 1.5s; 
 }
 section.centro {
@@ -110,7 +110,7 @@ section.centro {
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-        ),url(/tp0-grupo1/imagenes/inicio/EntreRios-Centro.jpg);
+        ),url(../imagenes/inicio/EntreRios-Centro.jpg);
     animation-delay: 2s; 
 }
 section.patagonia {
@@ -118,7 +118,7 @@ section.patagonia {
         0deg,
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)
-        ),url(/tp0-grupo1/imagenes/inicio/RioNegro-patagonia.webp);
+        ),url(../imagenes/inicio/RioNegro-patagonia.webp);
     animation-delay: 2.5s; 
 }
 
