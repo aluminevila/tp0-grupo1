@@ -12,6 +12,13 @@
     text-align: center;
     
 }
+.header h1 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 15px;
+}
 
 body{
     background-color: aliceblue;
@@ -42,6 +49,7 @@ nav ul li{
 }
 
 nav ul li a {
+    font-size: 20px;
     text-decoration: none;
     color: #334750;
     text-align: center;
