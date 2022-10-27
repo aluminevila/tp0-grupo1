@@ -6,6 +6,7 @@
     text-align: center;
 }
 .titulo h3{
+    font-size: 20px;
     margin: 0;
     padding: 5px;
     font-weight: 400;
@@ -41,9 +42,9 @@ button {
     color: #334750;
     border: none;
     border-radius: 5px;
-    padding: 15px 30px;
+    padding: 15px 15px;
     margin: 0px 30px;
-    font-size: 14px;
+    font-size: 16px;
     background-color:#e7e7e7;
     cursor: pointer;
 }

@@ -42,6 +42,7 @@ nav ul li{
 }
 
 nav ul li a {
+    font-size: 20px;
     text-decoration: none;
     color: #334750;
     text-align: center;
