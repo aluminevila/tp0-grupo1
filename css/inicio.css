@@ -27,6 +27,7 @@ main .container-b {
     border-radius: 0%;
 }
 main h3{
+    font-size: 24px;
     color: black;
     padding: 50px 10px 50px 10px;
 }
@@ -46,7 +47,7 @@ main .container-b,.regiones{
     flex-direction: row;
 }
 .regiones p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     width: 8.3rem;
 }
@@ -131,6 +132,7 @@ section.patagonia {
     height: 250px;
 }
 .provincias h4 {
+    font-size: 20px;
     padding-bottom: 20px;
     color: white;
 }

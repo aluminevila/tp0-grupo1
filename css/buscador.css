@@ -45,6 +45,7 @@ button {
     padding: 15px 15px;
     margin: 0px 30px;
     font-size: 16px;
+    font-weight: 500;
     background-color:#e7e7e7;
     cursor: pointer;
 }
@@ -59,5 +60,7 @@ button:hover {
     background: #334750;
 }
 input {
+    color: #334750;
+    font-size: 16px;
     margin-top: 10px;
 }

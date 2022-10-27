@@ -29,7 +29,7 @@ main h2{
     padding: 15px;
     margin: 2% 6.5%;
     font-weight: 400;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .regiones {
@@ -62,15 +62,15 @@ main h2{
 .oferta h4 {
     color: #233138;
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
 }
 .oferta p {
     background-color: rgba(0, 0, 0, 0.4);
-    background-size: cover;
-    padding-top: 2% 0%;    
+    background-size: cover;    
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     padding: 10px;
+    margin: 10px 0px;
 }
 
 @keyframes fadein {
