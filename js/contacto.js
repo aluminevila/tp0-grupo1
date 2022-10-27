@@ -25,10 +25,10 @@ function validarFormulario(evento) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+    document.getElementById("form").addEventListener('submit', validarFormulario); 
 });
 
-/*--- api formspree ---*/
+/*--- Formspree ---*/
 
 const $form = document.querySelector('#form')
 
