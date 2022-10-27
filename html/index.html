@@ -56,14 +56,14 @@
                     <div class="dropdown">
                         <button class="checkin">LLEGADA</button>
                         <div class="dropdown-options">
-                            <input type="date"> 
+                            <input type="date" required> 
                         </div>
                     </div>
         
                     <div class="dropdown">
                         <button class="checkout">SALIDA</button>
                         <div class="dropdown-options">
-                            <input type="date"> 
+                            <input type="date" required> 
                         </div>                
                     </div>
         
@@ -71,18 +71,15 @@
                         <button class="dropdown-btn">HUÉSPEDES</button>
                         <div class="dropdown-options">
                             <form action="">
-                                <input type="number" name="adultos" id="adultos" placeholder="Adultos" min="1">
-                                <input type="number" name="niños" id="niños" placeholder="Niños" min="0">
-                                <input type="number" name="mascotas" id="mascotas" placeholder="Mascotas" min="0">
+                                <input type="number" name="adultos" id="adultos" required placeholder="Adultos" min="1">
+                                <input type="number" name="niños" id="niños" required placeholder="Niños" min="0">
+                                <input type="number" name="mascotas" id="mascotas" required placeholder="Mascotas" min="0">
                                 <input type="submit" name="aceptar" id="aceptar" value="Aceptar">
                             </form>
                         </div>
                     </div>
 
-                    <div class="dropdown">
-                        <button type="submit" class="dropdown-btn submit">BUSCAR</button> 
-                    </div>
-                    
+                    <button type="submit" class="dropdown-btn submit">BUSCAR</button> 
         
                 </div>
         
