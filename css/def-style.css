@@ -93,7 +93,9 @@ footer p{
     color:#86AB41;
 } */
 
-
+#hamb, #menu-check {
+    display: none;
+}
 
 @media (min-width: 720px) {
     /*header {
@@ -114,6 +116,37 @@ footer p{
         text-align: left;
         padding: 10px;
     }*/
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-check:not(:checked) ~ #menu {
+        display: none;
+    }
+    #menu-check:checked ~ #menu {
+        display: block;
+    }
+    #hamb {
+        display: block;
+        background-color: white;
+        font-size: 2em;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 0.2% 2%;
+        position: absolute;
+        top: 1em;
+        right: 0.5em;
+    }
+    #menu-cerrar {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
 }
 
 footer a {

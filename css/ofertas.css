@@ -121,9 +121,7 @@ main h2{
     background-size: cover;
 }
 
-#hamb, #menu-check {
-    display: none;
-}
+
 
 @media only screen and (max-width: 992px) {
     .oferta {
@@ -141,33 +139,6 @@ main h2{
 
     /* menu hamburguesa*/
 
-    #menu-check:not(:checked) ~ #menu {
-        display: none;
-    }
-    #menu-check:checked ~ #menu {
-        display: block;
-    }
-    #hamb {
-        display: block;
-        background-color: white;
-        font-size: 2em;
-        font-weight: bold;
-        border: 2px solid black;
-        border-radius: 5px;
-        width: fit-content;
-        padding: 0.2% 2%;
-        position: absolute;
-        top: 1em;
-        right: 0.5em;
-    }
-    #menu-cerrar {
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-abrir {
-        display: none;
-    }
-    #menu-check:checked ~ label #menu-cerrar {
-        display: block;
-    }
+    
 }
 

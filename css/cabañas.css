@@ -228,7 +228,7 @@ i{
 }
 
 
-#menub, #menu-check {
+#busqueda, #busqueda-check {
     display: none;
 }
 
@@ -244,13 +244,13 @@ i{
         padding: 5% 7%;
         margin: 0%;
     }
-    #menu-check:not(:checked) ~ .buscarpor {
+    #busqueda-check:not(:checked) ~ .buscarpor {
         display: none;
     }
-    #menu-check:checked ~ .buscarpor {
+    #busqueda-check:checked ~ .buscarpor {
         display: block;
     }
-    #menub {
+    #busqueda {
         display: block;
         font-size: 1.2em;
         font-weight: bold;
@@ -258,23 +258,23 @@ i{
         position: relative;
         left: -150%;
     }
-    #menub i {
+    #busqueda i {
         color: #334750;
         padding: 50%;
         border: 1px solid #334750;
         border-radius: 5px;
         background-color: #e7e7e7;
     }
-    #menub:hover {
+    #busqueda:hover {
         cursor: pointer;
     }
-    #menu-cerrar {
+    #busqueda-cerrar {
         display: none;
     }
-    #menu-check:checked ~ label #menu-abrir {
+    #busqueda-check:checked ~ label #busqueda-abrir {
         display: none;
     }
-    #menu-check:checked ~ label #menu-cerrar {
+    #busqueda-check:checked ~ label #busqueda-cerrar {
         display: block;
     }
     .buscarpor {
