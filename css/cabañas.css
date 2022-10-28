@@ -252,13 +252,18 @@ i{
     }
     #menub {
         display: block;
-        color: #86AB41;
         font-size: 1.2em;
         font-weight: bold;
         box-shadow:  rgba(0, 0, 0, 0.1) 0px 1px 4px;
-        padding: 1% 2%;
-        top: 0.5em;
-        left: 0.5em;
+        position: relative;
+        left: -150%;
+    }
+    #menub i {
+        color: #334750;
+        padding: 50%;
+        border: 1px solid #334750;
+        border-radius: 5px;
+        background-color: #e7e7e7;
     }
     #menub:hover {
         cursor: pointer;
@@ -304,7 +309,9 @@ i{
         justify-content: space-evenly;
         margin-bottom: 7.5%;
     }
-
+    #menub {
+        left: 0%;
+    }
 }
 /*?*/
 footer i {
