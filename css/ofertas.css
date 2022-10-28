@@ -59,6 +59,12 @@ main h2{
     visibility: hidden;
     animation-fill-mode: forwards;
 }
+.oferta:hover {
+    box-shadow: 2px 8px 10px;
+    transform: translate(-1px,-6px);
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
 .oferta h4 {
     color: #233138;
     font-size: 18px;
